@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	display: grid;
+	place-items: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    border:  1px solid black; 
+}
+
+.parent {
+	height: auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+	
+	min-width: 400px;
+	height: 300px;
+	padding: 50px;
+	resize: both;
+  	overflow: auto;
+}
+
+.parent .visual {
+    height: 100px;
+    width: 100%;
+}
+
+.parent .card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.parent h3 {
+    margin: 0
+}
+
